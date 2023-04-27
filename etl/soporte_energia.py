@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
+import mysql.connector
 
 cod_comunidades = {'Ceuta': 8744,
                     'Melilla': 8745,

@@ -57,3 +57,21 @@ df_final = api.guardar(df_final, formato, nombre_archivo)
 print("-----------------------------------------")
 print("Tu archivo se ha guardado.")
 
+print("-----------------------------------------")
+print('Ahora vamos a cargar tus datos en una base de datos de MySQL.')
+nombre_bbdd = input('¿Como quiere que se llame su base de datos?')
+contraseña = input('Escribe su contraseña.  ')
+plugin = input('Escribe su plugin.  ')
+
+sql = sp.Cargar(nombre_bbdd, contraseña, plugin)
+
+print("-----------------------------------------")
+print('Estamos creando su base de datos.')
+sql.crear_bbdd
+print("-----------------------------------------")
+
+
+#print('¿Quiere crear una tabla en su base de datos?')
+while input('¿Quiere crear una tabla en su base de datos? Escribe SI o NO.  ') == 'SI':
+    query = input('Escribe su query para crear una tabla.  ')
+    sql.crear_insertar_tabla(query)
