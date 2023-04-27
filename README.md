@@ -9,4 +9,4 @@ En este repositorio se encuentran tres carpetas con demostraciones de diferentes
 
 - Limpieza: procedimiento para el tratamiento de los datos con la finalidad de cribarlos para ejercer un correcto análisis posterior, como  por ejemplo el procesamiento de los datos, su conocimiento y su adecuada manipulación.
 
-- ETL:
+- ETL: extracción de datos desde APIS. Limpieza, tratamiento y creación de bases de datos en SQL una vez obtenida la información, guardando los métodos para estos procedimientos en clases y funciones para posibilitar la automatización del proceso. 
