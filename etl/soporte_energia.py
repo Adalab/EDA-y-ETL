@@ -118,7 +118,6 @@ class Cargar:
             print("Message", err.msg)
 
 
-
     def crear_insertar_tabla(self,query):
     
         cnx = mysql.connector.connect(user='root', password=f"{self.contraseña}",
